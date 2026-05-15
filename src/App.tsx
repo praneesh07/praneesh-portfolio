@@ -182,13 +182,13 @@ export default function App() {
                     loop
                     autoPlay
                     playsInline
-                    preload="metadata"
-                    controls={false}
+                    preload="auto"
                     className={`w-full h-full transition-transform duration-500 group-hover:scale-110 ${project.title === 'Reels Edit'
                         ? 'object-contain bg-black'
                         : 'object-cover'
                       }`}
                   />
+
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity pointer-events-none"></div>
 
