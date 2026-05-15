@@ -12,31 +12,31 @@ export default function App() {
   ];
 
   const software = [
-    { name: 'Adobe Premiere Pro', image: '/src/imports/premiere-pro.svg' },
-    { name: 'Adobe After Effects', image: '/src/imports/after-effects.svg' },
-    { name: 'Adobe Photoshop', image: '/src/imports/photoshop.svg' }
+    { name: 'Adobe Premiere Pro', image: '/imports/premiere-pro.svg' },
+    { name: 'Adobe After Effects', image: '/imports/after-effects.svg' },
+    { name: 'Adobe Photoshop', image: '/imports/photoshop.svg' }
   ];
 
   const projects = [
     {
       title: 'Speed SFX Edit',
-      video: '/src/imports/speed-sfx-edit.mp4',
-      thumbnail: '/src/imports/ChatGPT_Image_May_15__2026__03_29_59_PM.png'
+      video: '/imports/speed-sfx-edit.mp4',
+      thumbnail: '/imports/ChatGPT_Image_May_15__2026__03_29_59_PM.png'
     },
     {
       title: 'Cinematic Edit',
-      video: '/src/imports/cinematic-edit.mp4',
-      thumbnail: '/src/imports/ChatGPT Image May 15, 2026, 03_34_48 PM.png'
+      video: '/imports/cinematic-edit.mp4',
+      thumbnail: '/imports/ChatGPT Image May 15, 2026, 03_34_48 PM.png'
     },
     {
       title: 'Reels Edit',
-      video: '/src/imports/reels-edit.mp4',
-      thumbnail: '/src/imports/ChatGPT Image May 15, 2026, 03_55_55 PM.png'
+      video: '/imports/reels-edit.mp4',
+      thumbnail: '/imports/ChatGPT Image May 15, 2026, 03_55_55 PM.png'
     },
     {
       title: 'Podcast Edit',
-      video: '/src/imports/podcast-edit.mp4',
-      thumbnail: '/src/imports/ChatGPT Image May 15, 2026, 04_00_02 PM.png'
+      video: '/imports/podcast-edit.mp4',
+      thumbnail: '/imports/ChatGPT Image May 15, 2026, 04_00_02 PM.png'
     }
   ];
 
