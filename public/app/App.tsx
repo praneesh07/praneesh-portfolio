@@ -63,7 +63,7 @@ export default function App() {
         <section className="relative w-full">
           <div className="w-full">
             <img
-              src="/src/imports/ChatGPT_Image_May_15__2026__03_14_18_PM.png"
+              src="/imports/ChatGPT_Image_May_15__2026__03_14_18_PM.png"
               alt="Praneesh - Video Editor Portfolio"
               className="w-full h-auto object-cover"
             />
