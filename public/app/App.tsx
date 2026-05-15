@@ -21,22 +21,22 @@ export default function App() {
     {
       title: 'Speed SFX Edit',
       video: '/imports/speed-sfx-edit.mp4',
-      thumbnail: '/imports/ChatGPT_Image_May_15__2026__03_29_59_PM.png'
+      thumbnail: '/imports/speed-thumb.png'
     },
     {
       title: 'Cinematic Edit',
       video: '/imports/cinematic-edit.mp4',
-      thumbnail: '/imports/ChatGPT Image May 15, 2026, 03_34_48 PM.png'
+      thumbnail: '/imports/cinematic-thumb.png'
     },
     {
       title: 'Reels Edit',
       video: '/imports/reels-edit.mp4',
-      thumbnail: '/imports/ChatGPT Image May 15, 2026, 03_55_55 PM.png'
+      thumbnail: '/imports/reels-thumb.png'
     },
     {
       title: 'Podcast Edit',
       video: '/imports/podcast-edit.mp4',
-      thumbnail: '/imports/ChatGPT Image May 15, 2026, 04_00_02 PM.png'
+      thumbnail: '/imports/podcast-thumb.png'
     }
   ];
 
@@ -166,12 +166,15 @@ export default function App() {
                 FEATURED WORKS
               </span>
             </h2>
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {projects.map((project, index) => (
                 <div
                   key={index}
                   className="group relative aspect-video rounded-xl overflow-hidden border border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] cursor-pointer"
                 >
+
+                  {/* Video */}
                   <video
                     src={project.video}
                     poster={project.thumbnail}
@@ -179,16 +182,18 @@ export default function App() {
                     loop
                     autoPlay
                     playsInline
+                    preload="auto"
                     className={`w-full h-full transition-transform duration-500 group-hover:scale-110 ${project.title === 'Reels Edit'
-                      ? 'object-contain bg-black'
-                      : 'object-cover'
+                        ? 'object-contain bg-black'
+                        : 'object-cover'
                       }`}
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity pointer-events-none"></div>
 
                   {/* Play Icon */}
-                  <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <div className="w-16 h-16 rounded-full bg-purple-600/80 backdrop-blur-sm flex items-center justify-center group-hover:bg-purple-500 transition-all duration-300 group-hover:scale-110 shadow-[0_0_30px_rgba(168,85,247,0.6)]">
                       <Play className="w-8 h-8 text-white fill-white ml-1" />
                     </div>
@@ -196,8 +201,11 @@ export default function App() {
 
                   {/* Title */}
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                    <h3 className="text-xl font-bold text-white">
+                      {project.title}
+                    </h3>
                   </div>
+
                 </div>
               ))}
             </div>
