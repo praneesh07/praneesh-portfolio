@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import { Instagram, Mail, MapPin, Play } from 'lucide-react';
 
-
 export default function App() {
+
+
   const skills = [
     'Video Editing',
     'Color Grading',
