@@ -22,22 +22,22 @@ export default function App() {
     {
       title: 'Speed SFX Edit',
       video: '/imports/speed-sfx-edit.mp4',
-      thumbnail: '/imports/speed-thumb.png'
+      thumbnail: '/imports/speed-thumb.webp'
     },
     {
       title: 'Cinematic Edit',
       video: '/imports/cinematic-edit.mp4',
-      thumbnail: '/imports/cinematic-thumb.png'
+      thumbnail: '/imports/cinematic-thumb.webp'
     },
     {
       title: 'Reels Edit',
       video: '/imports/reels-edit.mp4',
-      thumbnail: '/imports/reels-thumb.png'
+      thumbnail: '/imports/reels-thumb.webp'
     },
     {
       title: 'Podcast Edit',
       video: '/imports/podcast-edit.mp4',
-      thumbnail: '/imports/podcast-thumb.png'
+      thumbnail: '/imports/podcast-thumb.webp'
     }
   ];
 
@@ -64,7 +64,7 @@ export default function App() {
         <section className="relative w-full">
           <div className="w-full">
             <img
-              src="/imports/ChatGPT_Image_May_15__2026__03_14_18_PM.png"
+              src="/imports/ChatGPT_Image_May_15__2026__03_14_18_PM.webp"
               alt="Praneesh - Video Editor Portfolio"
               className="w-full h-auto object-cover"
             />
