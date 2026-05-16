@@ -251,8 +251,11 @@ export default function App() {
               <div className="p-10 rounded-2xl border border-purple-500/30 bg-gradient-to-br from-purple-950/20 to-black/40 backdrop-blur-lg space-y-6">
                 <div className="flex items-center justify-center gap-3 text-xl">
                   <Mail className="w-6 h-6 text-purple-400" />
-                  <span className="text-purple-300">praneeshgaran@gmail.com</span>
+                  <span className="text-purple-300">
+                    praneeshgaran@gmail.com
+                  </span>
                 </div>
+
                 <div className="flex items-center justify-center gap-3 text-xl">
                   <MapPin className="w-6 h-6 text-purple-400" />
                   <span className="text-purple-300">
@@ -261,9 +264,54 @@ export default function App() {
                 </div>
               </div>
 
+              {/* Contact Form */}
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                className="space-y-6"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="82db4bc0-4267-4527-b665-efc407dfb65a"
+                />
+
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  className="w-full p-4 rounded-xl bg-black/40 border border-purple-500/30 text-white outline-none focus:border-purple-400"
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  className="w-full p-4 rounded-xl bg-black/40 border border-purple-500/30 text-white outline-none focus:border-purple-400"
+                />
+
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows={5}
+                  required
+                  className="w-full p-4 rounded-xl bg-black/40 border border-purple-500/30 text-white outline-none focus:border-purple-400"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  className="px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white font-bold tracking-wide hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(168,85,247,0.5)]"
+                >
+                  SEND MESSAGE
+                </button>
+              </form>
+
               {/* Quote */}
               <div className="pt-12 space-y-4">
                 <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
+
                 <p className="text-2xl md:text-3xl font-bold tracking-wide">
                   <span className="bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
                     "EDITING IS NOT JUST MY PROFESSION, IT'S MY PASSION."
