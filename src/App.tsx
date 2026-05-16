@@ -75,7 +75,7 @@ export default function App() {
         <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent max-w-6xl mx-auto"></div>
 
         {/* About Section */}
-        <section className="py-32 px-4">
+        <section className="py-16 md:py-32 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center space-y-6">
               <h2 className="text-5xl md:text-7xl font-black tracking-tight">
@@ -99,7 +99,7 @@ export default function App() {
         <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent max-w-6xl mx-auto"></div>
 
         {/* Skills Section */}
-        <section className="py-32 px-4">
+        <section className="py-16 md:py-32 px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-5xl md:text-7xl font-black text-center mb-16 tracking-tight">
               <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
@@ -126,7 +126,7 @@ export default function App() {
         <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent max-w-6xl mx-auto"></div>
 
         {/* Software Section */}
-        <section className="py-32 px-4">
+        <section className="py-16 md:py-32 px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-5xl md:text-7xl font-black text-center mb-16 tracking-tight">
               <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
@@ -160,7 +160,7 @@ export default function App() {
         <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent max-w-6xl mx-auto"></div>
 
         {/* Featured Works Section */}
-        <section className="py-32 px-4">
+        <section className="py-16 md:py-32 px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-5xl md:text-7xl font-black text-center mb-16 tracking-tight">
               <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
@@ -212,7 +212,7 @@ export default function App() {
         <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent max-w-6xl mx-auto"></div>
 
         {/* Services Section */}
-        <section className="py-32 px-4">
+        <section className="py-16 md:py-32 px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-5xl md:text-7xl font-black text-center mb-16 tracking-tight">
               <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
@@ -239,7 +239,7 @@ export default function App() {
         <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent max-w-6xl mx-auto"></div>
 
         {/* Contact Footer */}
-        <section className="py-32 px-4">
+        <section className="py-16 md:py-32 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center space-y-12">
               <h2 className="text-5xl md:text-7xl font-black tracking-tight">
