@@ -324,7 +324,7 @@ export default function App() {
                     href="mailto:praneeshgaran@gmail.com"
                     className="text-gray-300 transition-colors duration-300"
                   >
-                    <Mail className="w-4 h-4" />
+                    <Mail className="w-5 h-5" />
                   </motion.a>
 
                   <motion.a
