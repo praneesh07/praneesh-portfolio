@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Instagram, Mail, MapPin, Play } from 'lucide-react';
+import { Instagram, Mail, MapPin, } from 'lucide-react';
 
 export default function App() {
 
@@ -185,20 +185,15 @@ export default function App() {
                     playsInline
                     preload="auto"
                     className={`w-full h-full transition-transform duration-500 group-hover:scale-110 ${project.title === 'Reels Edit'
-                        ? 'object-contain bg-black'
-                        : 'object-cover'
+                      ? 'object-contain bg-black'
+                      : 'object-cover'
                       }`}
                   />
 
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity pointer-events-none"></div>
 
-                  {/* Play Icon */}
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-16 h-16 rounded-full bg-purple-600/80 backdrop-blur-sm flex items-center justify-center group-hover:bg-purple-500 transition-all duration-300 group-hover:scale-110 shadow-[0_0_30px_rgba(168,85,247,0.6)]">
-                      <Play className="w-8 h-8 text-white fill-white ml-1" />
-                    </div>
-                  </div>
+
 
                   {/* Title */}
                   <div className="absolute bottom-0 left-0 right-0 p-4">
@@ -260,7 +255,9 @@ export default function App() {
                 </div>
                 <div className="flex items-center justify-center gap-3 text-xl">
                   <MapPin className="w-6 h-6 text-purple-400" />
-                  <span className="text-purple-300">Pondicherry, India</span>
+                  <span className="text-purple-300">
+                    Pondicherry, India
+                  </span>
                 </div>
               </div>
 
